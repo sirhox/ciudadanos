@@ -1,0 +1,1 @@
+Utilizamos el patron Adapter para adaptar el uso de “Distance Matrix API”, ya que necesitabamos integrarla y este patron nos facilita la integracion y la compatibilad con el sistema.
