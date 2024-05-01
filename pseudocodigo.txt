@@ -1,0 +1,36 @@
+	/*pseudocodigo viaje*/
+
+	reaccionar() {
+		if(this.reaccion == POLICIA)
+			this.llamarPolicia();
+		if(this.reaccion == USUARIO)
+			this.llamarUsuario();
+		
+	}
+
+	calcularDistancia(CalculadorDistancia calculadorDistancia){
+		this.distanciaViaje = calculadorDistancia.calcularDistancia(this.puntoPartida, this.puntoFin)
+	}
+
+
+//Punto 2
+
+	calcularDemora(){
+		
+		if (this.demora<=0){
+			Collections.sort(paradas, Comparator.comparingInt(Parada::getNroParada));
+			Parada paradaActual = paradas.get(0);
+			Parada paradaSiguiente = paradas.get(1);
+			demora = this.calcularDemoraPorDistancia(paradaActual, paradaSiguiente);
+			parada.remove(0);
+			parada.remove(1);
+			}
+		else{
+			for(i=0; i<= paradas.lenghth(); i++){
+				paradaActual = parada.get(i);
+				paradaSig = parada.get(i+1);
+				demora += this.calcularDemoraPorDistancia(paradaActual, paradaSig);
+			}
+		     }
+	}
+				
