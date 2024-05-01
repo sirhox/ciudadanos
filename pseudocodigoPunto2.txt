@@ -1,21 +1,4 @@
-	/*pseudocodigo viaje*/
-
-	reaccionar() {
-		if(this.reaccion == POLICIA)
-			this.llamarPolicia();
-		if(this.reaccion == USUARIO)
-			this.llamarUsuario();
-		
-	}
-
-	calcularDistancia(CalculadorDistancia calculadorDistancia){
-		this.distanciaViaje = calculadorDistancia.calcularDistancia(this.puntoPartida, this.puntoFin)
-	}
-
-
-//Punto 2
-
-	calcularDemora(){
+calcularDemora(){
 		
 		if (this.demora<=0){
 			Collections.sort(paradas, Comparator.comparingInt(Parada::getNroParada));
